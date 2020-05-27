@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+<!--======================================================================== -->
+<!-- Fixed Container -->
+<!-- Use the .container class to create a responsive, fixed-width container.
+
+Note that its width (max-width) will change on different screen sizes:
+Extra small     <576px	max-width=100%
+Small           ≥576px	max-width=540px
+Medium 	        ≥768px  max-width=720px
+Large 	        ≥992px  max-width=960px
+Extra large     ≥1200px max-width=1140px
+					
+Open the example below and resize the browser window to see that the container width will 
+change at different breakpoints: -->
+
+<div class="container" style="background-color:darkolivegreen;">
+  <h1>My First Bootstrap Page - Fixed Container</h1>
+  <p>This part is inside a .container class.</p> 
+  <p>The .container class provides a responsive fixed width container.</p>
+  <p>Resize the browser window to see that its width (max-width) will change at different breakpoints.</p>
+</div>
+<!--======================================================================== -->
+
+<!--======================================================================== -->
+<!-- Fluid Container -->
+<!-- Use the .container-fluid class to create a full width container, 
+    that will always span the entire width of the screen (width is always 100%): -->
+
+
+<div class="container-fluid" style="background-color: crimson;">
+    <h1>My First Bootstrap Page- Fluid Container </h1>
+    <p>This is some text.</p>
+</div>
+<!--======================================================================== -->
+
+<!--======================================================================== -->
+<!-- 
+Container Padding
+By default, containers have 15px left and right padding, with no top or bottom padding.
+Therefore, we often use spacing utilities, such as extra padding and margins to make 
+them look even better. For example, .pt-3 means "add a top padding of 16px": -->
+<div class="container pt-3" style="background-color:grey;">
+    <h1>My First Bootstrap Page- fixed Container with top padding</h1>
+    <p>This is some text.</p>
+</div>
+<!--======================================================================== -->
+
+<!-- Container Border and Color
+Other utilities, such as borders and colors, are also often used together with containers: -->
+
+<!-- EXAMPLES -->
+<div class="container p-3 my-3 border">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a border and some extra padding and margins.</p>
+</div>
+
+<div class="container p-3 my-3 bg-dark text-white">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+</div>
+
+<div class="container p-3 my-3 bg-primary text-white">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a blue background color and a white text, and some extra padding and margins.</p>
+</div>
+
+</body>
+</html>
