@@ -1,0 +1,185 @@
+<!--Bootstrap Input
+Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.
+
+Note: Inputs will NOT be fully styled if their type is not properly declared!
+  -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--The following example contains two input elements; one of type="text" and one of type="password". 
+    As we mentioned in the Forms chapter, we use the .form-control class to style inputs with full-width 
+    and proper padding, etc:  -->
+<div class="container">
+  <h2>Form control: input</h2>
+  <p>The form below contains two input elements; one of type text and one of type password:</p>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" name="username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!-- Bootstrap Textarea -->
+<div class="container">
+    <h2>Form control: textarea</h2>
+    <p>The form below contains a textarea for comments:</p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<!-- Bootstrap Checkboxes -->
+<!-- Use a wrapper element with class="form-check" to ensure proper margins for labels and checkboxes.
+Add the .form-check-label class to label elements, and .form-check-input to style checkboxes properly inside the .form-check container. -->
+<div class="container">
+    <h2>Form control: checkbox</h2>
+    <p>The form below contains three checkboxes. The first option is checked by default, and the last option is disabled:</p>
+    <form action="/action_page.php">
+      <div class="form-check">
+        <label class="form-check-label" for="check1">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Option 1
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="check2">
+          <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Option 2
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" disabled>Option 3
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!--Inline Checkboxes
+Use the .form-check-inline class if you want the checkboxes to appear on the same line  -->
+<div class="container">
+    <h2>Form control: inline checkbox</h2>
+    <p>The form below contains three inline checkboxes:</p>
+    <form action="/action_page.php">
+      <div class="form-check-inline">
+        <label class="form-check-label" for="check1">
+          <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Option 1
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label" for="check2">
+          <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Option 2
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" disabled>Option 3
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!-- Bootstrap Radio Buttons -->
+<!-- Radio buttons are used if you want to limit the user to just one selection from a list of preset options.
+
+The following example contains three radio buttons. The last option is disabled: -->
+<div class="container">
+    <h2>Form control: radio buttons</h2>
+    <p>The form below contains three radio buttons. The first option is checked by default, and the last option is disabled:</p>
+    <form action="/action_page.php">
+      <div class="form-check">
+        <label class="form-check-label" for="radio1">
+          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="radio2">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" disabled>Option 3
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+  
+
+<!-- As with checkboxes, use the .form-check-inline class if you want the radio buttons to appear on the same line: -->
+<div class="container">
+    <h2>Form control: inline radio buttons</h2>
+    <p>The form below contains three inline radio buttons. The first option is checked by default, and the last option is disabled:</p>
+    <form action="/action_page.php">
+      <div class="form-check-inline">
+        <label class="form-check-label" for="radio1">
+          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label" for="radio2">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" disabled>Option 3
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<!-- Bootstrap Select List -->
+<div class="container">
+    <h2>Form control: select</h2>
+    <p>The form below contains two dropdown menus (select lists):</p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="sel1">Select list (select one):</label>
+        <select class="form-control" id="sel1" name="sellist1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <br>
+        <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+        <select multiple class="form-control" id="sel2" name="sellist2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
